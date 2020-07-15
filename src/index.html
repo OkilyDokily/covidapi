@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Covid API</title>
+</head>
+<body>
+  <div class="jumbotron"><h1>Covid API</h1>  </div>
+  <div id="body">
+    <p>USA Covid Stats: Total Values</p>
+    <input type="radio" id="confirmed" name="status" value="confirmed">
+    <label for="confirmed">Confirmed</label><br>
+    <input type="radio" id="deaths" name="status" value="deaths">
+    <label for="deaths">Deaths</label><br>
+    <input type="radio" id="recovered" name="status" value="recovered">
+    <label for="recovered">Recovered</label>
+    <br>
+    <label for="from" >Date from:<input type="date" name="date" id="from" value="2020-07-10"></label>
+    <br>
+    <label for="to">Date to:<input type="date" name="date" id="to" value="2020-07-10"></label>
+    <br>
+    <button id="getusatotal">Get USA total</button>
+    <ul id="results"></ul>
+  </div>
+</body>
+</html>
